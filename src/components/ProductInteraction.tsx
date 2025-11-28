@@ -52,7 +52,7 @@ const ProductInteraction = ({
     <div className="flex flex-col gap-4 mt-4">
       {/* SIZE */}
       <div className="flex flex-col gap-2 text-xs">
-        <span className="text-gray-500">Size</span>
+        <span className="text-gray-500">Taille</span>
         <div className="flex items-center gap-2">
           {product.sizes.map((size) => (
             <div
@@ -102,11 +102,11 @@ const ProductInteraction = ({
         className="bg-gray-800 text-white px-4 py-2 rounded-md shadow-lg flex items-center justify-center gap-2 cursor-pointer text-sm font-medium"
       >
         <Plus className="w-4 h-4" />
-        Add to Cart
+        Ajouter au panier
       </button>
       <button className="ring-1 ring-gray-400 shadow-lg text-gray-800 px-4 py-2 rounded-md flex items-center justify-center cursor-pointer gap-2 text-sm font-medium">
         <ShoppingCart className="w-4 h-4" />
-        Buy this Item
+        Acheter cet article
       </button>
     </div>
   );

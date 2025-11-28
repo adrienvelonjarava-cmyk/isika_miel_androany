@@ -17,9 +17,9 @@ const products: ProductsType = [
     sizes: ["Bocal", "Bouteille"],
     colors: ["gray", "purple", "green"],
     images: {
-      gray: "/products/litchi.png",
-      purple: "/products/litchi.png",
-      green: "/products/litchi.png",
+      gray: "/products/litchi_qrcode.png",
+      purple: "/products/litchi_qrcode.png",
+      green: "/products/litchi_qrcode.png",
     },
   },
   {
@@ -32,7 +32,7 @@ const products: ProductsType = [
     price: 25000,
     sizes: ["Bocal", "Bouteille"],
     colors: ["gray", "green"],
-    images: { gray: "/products/niaouli.png", green: "/products/niaouli.png" },
+    images: { gray: "/products/niaouli_qrcode.png", green: "/products/niaouli_qrcode.png" },
   },
   {
     id: 3,
@@ -45,9 +45,9 @@ const products: ProductsType = [
     sizes: ["Bocal", "Bouteille"],
     colors: ["green", "blue", "black"],
     images: {
-      green: "/products/baobab.png",
-      blue: "/products/baobab.png",
-      black: "/products/baobab.png",
+      green: "/products/baobab_qrcode.png",
+      blue: "/products/baobab_qrcode.png",
+      black: "/products/baobab_qrcode.png",
     },
   },
   {
@@ -60,7 +60,7 @@ const products: ProductsType = [
     price: 25000,
     sizes: ["Bocal", "Bouteille"],
     colors: ["white", "pink"],
-    images: { white: "/products/cactus.png", pink: "/products/cactus.png" },
+    images: { white: "/products/cactus_qrcode.png", pink: "/products/cactus_qrcode.png" },
   },
   {
     id: 5,
@@ -73,9 +73,9 @@ const products: ProductsType = [
     sizes: ["Bocal", "Bouteille"],
     colors: ["red", "orange", "black"],
     images: {
-      red: "/products/mokarana.png",
-      orange: "/products/mokarana.png",
-      black: "/products/mokarana.png",
+      red: "/products/mokarana_qrcode.png",
+      orange: "/products/mokarana_qrcode.png",
+      black: "/products/mokarana_qrcode.png",
     },
   },
   {
@@ -88,7 +88,7 @@ const products: ProductsType = [
     price: 25000,
     sizes: ["Bocal", "Bouteille"],
     colors: ["gray", "white"],
-    images: { gray: "/products/eucalytus.png", white: "/products/eucalytus.png" },
+    images: { gray: "/products/eucalyptus_qrcode.png", white: "/products/eucalytus_qrcode.png" },
   },
   {
     id: 7,
@@ -100,7 +100,7 @@ const products: ProductsType = [
     price: 25000,
     sizes: ["Bocal", "Bouteille"],
     colors: ["gray", "pink"],
-    images: { gray: "/products/mangrove.png", pink: "/products/mangrove.png" },
+    images: { gray: "/products/mangrove_qrcode.png", pink: "/products/mangrove_qrcode.png" },
   },
   {
     id: 8,
@@ -112,7 +112,7 @@ const products: ProductsType = [
     price: 25000,
     sizes: ["Bocal", "Bouteille"],
     colors: ["blue", "green"],
-    images: { blue: "/products/millefleur.png", green: "/products/millefleur.png" },
+    images: { blue: "/products/millefleur_qrcode.png", green: "/products/millefleur_qrcode.png" },
   },
 ];
 
@@ -129,7 +129,7 @@ const ProductList = ({ category,params }: { category: string, params:"homepage" 
             href={category ? `/products/?category=${category}` : "/products"}
             className="flex justify-end mt-4 underline text-sm text-gray-500"
         >
-            View all products
+            Voir tous les produits
         </Link>
     </div>
 );

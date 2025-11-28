@@ -11,28 +11,28 @@ const Footer = () => {
                 <p className='hidden md:block text-md font-medium tracking-wider text-white'>Isika Miel.</p>
             </Link>
             <p className='text-sm text-gray-400'>© 2025 Isika Miel</p>
-            <p className='text-sm text-gray-400'>All rights reseved.</p>
+            <p className='text-sm text-gray-400'>Tous droits réservés.</p>
         </div>
         <div className="flex flex-col gap-4 text-sm text-gray-400 items-center md:items-start">
             <p className="text-sm text-amber-50">Links</p>
-            <Link href="/">Homepage</Link>
+            <Link href="/">Page d'accuiel</Link>
             <Link href="/">Contact</Link>
-            <Link href="/">Terms of Service</Link>
-            <Link href="/">Privacy Policy</Link>
+            <Link href="/">Conditions d’utilisation</Link>
+            <Link href="/">Politique de confidentialité</Link>
       </div>
       <div className="flex flex-col gap-4 text-sm text-gray-400 items-center md:items-start">
             <p className="text-sm text-amber-50">Links</p>
-            <Link href="/">All Products</Link>
-            <Link href="/">New Arrivals</Link>
+            <Link href="/">Tous les produits</Link>
+            <Link href="/">Nouveaux arrivants</Link>
             <Link href="/">Best Sellers</Link>
-            <Link href="/">Sale</Link>
+            <Link href="/">Vente</Link>
       </div>
       <div className="flex flex-col gap-4 text-sm text-gray-400 items-center md:items-start">
             <p className="text-sm text-amber-50">Links</p>
             <Link href="/">A propos</Link>
             <Link href="/">Contacte</Link>
             <Link href="/">Blog</Link>
-            <Link href="/">Affiliate Programme</Link>
+            <Link href="/">Programme d'affiliation</Link>
       </div>
     </div>
   )

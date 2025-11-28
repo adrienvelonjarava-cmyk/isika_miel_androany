@@ -12,15 +12,15 @@ import { useState } from "react";
 const steps = [
   {
     id: 1,
-    title: "Shopping Cart",
+    title: "Panier",
   },
   {
     id: 2,
-    title: "Shipping Address",
+    title: "Adresse de livraison",
   },
   {
     id: 3,
-    title: "Payment Method",
+    title: "Méthode de paiement",
   },
 ];
 
@@ -92,7 +92,7 @@ const CartPage = () => {
   return (
     <div className="flex flex-col gap-8 items-center justify-center mt-12">
       {/* TITLE */}
-      <h1 className="text-2xl font-medium">Your Shopping Cart</h1>
+      <h1 className="text-2xl font-medium">Votre panier</h1>
       {/* STEPS */}
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         {steps.map((step) => (
@@ -146,10 +146,10 @@ const CartPage = () => {
                     <div className="flex flex-col gap-1">
                       <p className="text-sm font-medium">{item.name}</p>
                       <p className="text-xs text-gray-500">
-                        Quantity: {item.quantity}
+                        Quantite: {item.quantity}
                       </p>
                       <p className="text-xs text-gray-500">
-                        Size: {item.selectedSize}
+                        Taille: {item.selectedSize}
                       </p>
                     </div>
                     <p className="font-medium">{item.price} Ariary</p>
@@ -170,16 +170,16 @@ const CartPage = () => {
             <PaymentForm />
           ) : (
             <p className="text-sm text-gray-500">
-              Please fill in the shipping form to continue.
+              Veuillez remplir le formulaire d'expédition pour continuer.
             </p>
           )}
         </div>
         {/* DETAILS */}
         <div className="w-full lg:w-5/12 shadow-lg border border-gray-100 p-8 rounded-lg flex flex-col gap-8 h-max">
-          <h2 className="font-semibold">Cart Details</h2>
+          <h2 className="font-semibold">Details du panier</h2>
           <div className="flex flex-col gap-4">
             <div className="flex justify-between text-sm">
-              <p className="text-gray-500">Subtotal</p>
+              <p className="text-gray-500">Sous - total</p>
               <p className="font-medium">
                 {cart
                   .reduce((acc, item) => acc + item.price * item.quantity, 0)
@@ -187,11 +187,11 @@ const CartPage = () => {
               </p>
             </div>
             <div className="flex justify-between text-sm">
-              <p className="text-gray-500">Discount(10%)</p>
+              <p className="text-gray-500">Remise(10%)</p>
               <p className="font-medium">3 000 Ariary</p>
             </div>
             <div className="flex justify-between text-sm">
-              <p className="text-gray-500">Shipping Fee</p>
+              <p className="text-gray-500">Frais de livraison</p>
               <p className="font-medium">5 000 Ariary</p>
             </div>
             <hr className="border-gray-200" />
@@ -209,7 +209,7 @@ const CartPage = () => {
               onClick={() => router.push("/cart?step=2", { scroll: false })}
               className="w-full bg-gray-800 hover:bg-gray-900 transition-all duration-300 text-white p-2 rounded-lg cursor-pointer flex items-center justify-center gap-2"
             >
-              Continue
+              Continuer
               <ArrowRight className="w-3 h-3" />
             </button>
           )}

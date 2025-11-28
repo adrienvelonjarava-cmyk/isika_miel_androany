@@ -14,9 +14,9 @@ const product: ProductType = {
   sizes: ["Bocal", "Bouteille"],
   colors: ["gray", "purple", "green"],
   images: {
-      gray: "/products/litchi.png",
-      purple: "/products/litchi.png",
-      green: "/products/litchi.png",
+      gray: "/products/litchi_qrcode.png",
+      purple: "/products/litchi_qrcode.png",
+      green: "/products/litchi_qrcode.png",
   },
 };
 

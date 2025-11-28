@@ -20,7 +20,7 @@ const Navbar = () => (
             </Link>
             <Bell className='w-4 h-4 text-gray-600' />
             <ShoppingCartIcon />
-            <Link href={"/login"}>Sign In</Link>
+            <Link href={"/login"}>Se connecter</Link>
         </div>
     </nav>
 )

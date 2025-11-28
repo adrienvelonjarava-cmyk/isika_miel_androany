@@ -31,13 +31,13 @@ const ShippingForm = ({
     >
       <div className="flex flex-col gap-1">
         <label htmlFor="name" className="text-xs text-gray-500 font-medium">
-          Name
+          Nom
         </label>
         <input
           className="border-b border-gray-200 py-2 outline-none text-sm"
           type="text"
           id="name"
-          placeholder="John Doe"
+          placeholder="votre nom"
           {...register("name")}
         />
         {errors.name && (
@@ -52,7 +52,7 @@ const ShippingForm = ({
           className="border-b border-gray-200 py-2 outline-none text-sm"
           type="email"
           id="email"
-          placeholder="johndoe@gmail.com"
+          placeholder="exemple@gmail.com"
           {...register("email")}
         />
         {errors.email && (
@@ -61,7 +61,7 @@ const ShippingForm = ({
       </div>
       <div className="flex flex-col gap-1">
         <label htmlFor="phone" className="text-xs text-gray-500 font-medium">
-          Phone
+          Contact
         </label>
         <input
           className="border-b border-gray-200 py-2 outline-none text-sm"
@@ -76,7 +76,7 @@ const ShippingForm = ({
       </div>
       <div className="flex flex-col gap-1">
         <label htmlFor="address" className="text-xs text-gray-500 font-medium">
-          Address
+          Adresse
         </label>
         <input
           className="border-b border-gray-200 py-2 outline-none text-sm"
@@ -91,13 +91,13 @@ const ShippingForm = ({
       </div>
       <div className="flex flex-col gap-1">
         <label htmlFor="city" className="text-xs text-gray-500 font-medium">
-          City
+          Province
         </label>
         <input
           className="border-b border-gray-200 py-2 outline-none text-sm"
           type="text"
           id="city"
-          placeholder="New York"
+          placeholder="Fianarantsoa"
           {...register("city")}
         />
         {errors.city && (
@@ -108,7 +108,7 @@ const ShippingForm = ({
         type="submit"
         className="w-full bg-gray-800 hover:bg-gray-900 transition-all duration-300 text-white p-2 rounded-lg cursor-pointer flex items-center justify-center gap-2"
       >
-        Continue
+        Continuer
         <ArrowRight className="w-3 h-3" />
       </button>
     </form>

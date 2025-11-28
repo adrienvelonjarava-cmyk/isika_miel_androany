@@ -1,14 +1,13 @@
 import ProductList from "@/components/ProductList"
+import AutoImageCarousel from "@/components/AutoImageCarousel"
 import Image from "next/image"
+import FeaturedHoneyProduct from "@/components/FeaturedHoneyProduct";
 
 
 const Homepage = async ({searchParams} : {searchParams: Promise<{category: string}>}) => {
   const category = (await searchParams).category;
   return (
     <div className="">
-      <div className="relative aspect-3/1 mb-12">
-        <Image src={"/pub.png"} alt={"Isika Miel"} fill />
-      </div>
       <ProductList category={category} params="homepage"/>
     </div>
   )

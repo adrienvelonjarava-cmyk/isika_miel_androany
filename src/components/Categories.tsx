@@ -13,7 +13,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const categories = [
   {
-    name: "All",
+    name: "Tout",
     icon: <ShoppingBasket className="w-4 h-4" />,
     slug: "all",
   },
